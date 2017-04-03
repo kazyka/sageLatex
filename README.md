@@ -16,6 +16,7 @@ Now we need to make the sagetex.sty file
 
 There are two folders. One names sage -- we will make the sagetex.sty here and latex -- where we are going to write our code.
 
+**You can download and compile the sagetex.sty yourself from the link [here](https://www.ctan.org/tex-archive/macros/latex/contrib/sagetex/) or just use those that are in the git**
 
 In the sage folder, run these commands
 
