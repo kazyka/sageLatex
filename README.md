@@ -55,3 +55,19 @@ pdflatex example.tex <- to create the pdf file
 evince example.pdf <- to view the pdf
 ```
 
+## Clean folder structure
+
+sageLatex
+|--latex/
+	|--example.tex
+	|--sagetex.sty
+|--sage/
+	|--README
+	|--example.pdf
+	|--example.tex
+	|--py_and_sty_dtx.dtx
+	|--remote_sagetex_dtx.dtx
+	|--sagetexpackage_dtx.dtx
+	|--sagetexpackage_ins.ins
+	|--sagetexpackage_pdf.pdf
+	|--scripts_dtx.dtx
