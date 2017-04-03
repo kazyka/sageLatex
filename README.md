@@ -58,6 +58,8 @@ evince example.pdf <- to view the pdf
 
 ## Clean folder structure
 
+
+```
 sageLatex
 |--latex/
 	|--example.tex
@@ -72,3 +74,4 @@ sageLatex
 	|--sagetexpackage_ins.ins
 	|--sagetexpackage_pdf.pdf
 	|--scripts_dtx.dtx
+```
