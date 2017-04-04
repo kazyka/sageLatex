@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{sagetex}
+\usepackage{pgffor}
 
 \begin{document}
 
@@ -40,5 +41,39 @@ Here's a plot of $f$ from $-1$ to $1$:
 \sage{c}
 
 \sageplot{plot(poly) }
+
+
+\begin{sagesilent}
+	x = ZZ.random_element(-10,10)
+
+	x = 3*x + 1
+
+	f(x) = x^5
+		
+	q = 5
+\end{sagesilent}
+
+
+\[
+\sage{diff(f, x, 1)(x)}
+\]
+
+\sage{q}
+
+
+\begin{sagesilent}
+	m = 0
+	while m <= 5:
+	   m = m + 1
+\end{sagesilent}
+
+\sage{m}
+
+\begin{sageblock}
+for i in range(5):
+    p  = (1+1)^i
+\end{sageblock}
+
+\sage{p}
 
 \end{document}

@@ -4,25 +4,25 @@ _st_ = sagetex.SageTeXProcessor('example')
 try:
  _st_.inline(0, number_of_partitions(1269))
 except:
- _st_.goboom(8)
+ _st_.goboom(9)
 _st_.blockbegin()
 try:
      f(x) = exp(x) * sin(2*x)
 except:
- _st_.goboom(16)
+ _st_.goboom(17)
 _st_.blockend()
 try:
  _st_.inline(1, f(x))
 except:
- _st_.goboom(21)
+ _st_.goboom(22)
 try:
  _st_.inline(2, diff(f, x, 2)(x))
 except:
- _st_.goboom(22)
+ _st_.goboom(23)
 try:
  _st_.plot(0, format='notprovided', _p_=plot(f, -1, 1))
 except:
- _st_.goboom(27)
+ _st_.goboom(28)
 _st_.blockbegin()
 try:
  a = ZZ.random_element(-10,10)
@@ -32,22 +32,66 @@ try:
  c = ZZ.random_element(-10,10)
  poly = a*x^2 + b*x + c
 except:
- _st_.goboom(36)
+ _st_.goboom(37)
 _st_.blockend()
 try:
  _st_.inline(3, a)
 except:
- _st_.goboom(38)
+ _st_.goboom(39)
 try:
  _st_.inline(4, b)
 except:
- _st_.goboom(39)
+ _st_.goboom(40)
 try:
  _st_.inline(5, c)
 except:
- _st_.goboom(40)
+ _st_.goboom(41)
 try:
  _st_.plot(1, format='notprovided', _p_=plot(poly) )
 except:
- _st_.goboom(42)
+ _st_.goboom(43)
+_st_.blockbegin()
+try:
+ x = ZZ.random_element(-10,10)
+ 
+ x = 3*x + 1
+ 
+ f(x) = x^5
+ 
+ q = 5
+except:
+ _st_.goboom(54)
+_st_.blockend()
+try:
+ _st_.inline(6, diff(f, x, 1)(x))
+except:
+ _st_.goboom(58)
+try:
+ _st_.inline(7, q)
+except:
+ _st_.goboom(61)
+_st_.blockbegin()
+try:
+ m = 0
+ while m <= 5:
+    m = m + 1
+except:
+ _st_.goboom(68)
+_st_.blockend()
+try:
+ _st_.inline(8, m)
+except:
+ _st_.goboom(70)
+_st_.blockbegin()
+try:
+ s2 = 5
+ for i in range(s2):
+     p  = (1+1)^i
+except:
+ _st_.goboom(76)
+_st_.blockend()
+try:
+ _st_.inline(9, p)
+except:
+ _st_.goboom(78)
 _st_.endofdoc()
