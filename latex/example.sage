@@ -84,14 +84,13 @@ except:
  _st_.goboom(70)
 _st_.blockbegin()
 try:
- s2 = 5
- for i in range(s2):
-     p  = (1+1)^i
+ for i in range(5):
+     p = (1+1)^i
 except:
- _st_.goboom(76)
+ _st_.goboom(75)
 _st_.blockend()
 try:
  _st_.inline(9, p)
 except:
- _st_.goboom(78)
+ _st_.goboom(77)
 _st_.endofdoc()
