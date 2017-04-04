@@ -64,6 +64,7 @@ sageLatex
 |--latex/
 	|--example.tex
 	|--sagetex.sty
+	|--sagetex.py
 |--sage/
 	|--README
 	|--example.pdf
@@ -75,3 +76,20 @@ sageLatex
 	|--sagetexpackage_pdf.pdf
 	|--scripts_dtx.dtx
 ```
+
+# compile.sh
+
+You can use the .sh file, to compile instead of the tedious 5 commands you have to run. 
+
+In your console write ``chmod +x ./compile.sh`` and after to compile your latex you can just run the command ``./compile.sh``
+
+# Tutorial 
+
+
+## Basic
+
+
+## Loops
+
+
+## 
