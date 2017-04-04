@@ -26,4 +26,19 @@ Here's a plot of $f$ from $-1$ to $1$:
 
 \sageplot{plot(f, -1, 1)}
 
+\begin{sagesilent}
+	a = ZZ.random_element(-10,10)
+	while a == 0:
+	   a = ZZ.random_element(-10,10)
+	b = ZZ.random_element(-10,10)
+	c = ZZ.random_element(-10,10)
+	poly = a*x^2 + b*x + c
+\end{sagesilent}
+
+\sage{a}
+\sage{b}
+\sage{c}
+
+\sageplot{plot(poly) }
+
 \end{document}

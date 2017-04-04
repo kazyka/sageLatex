@@ -23,4 +23,31 @@ try:
  _st_.plot(0, format='notprovided', _p_=plot(f, -1, 1))
 except:
  _st_.goboom(27)
+_st_.blockbegin()
+try:
+ a = ZZ.random_element(-10,10)
+ while a == 0:
+    a = ZZ.random_element(-10,10)
+ b = ZZ.random_element(-10,10)
+ c = ZZ.random_element(-10,10)
+ poly = a*x^2 + b*x + c
+except:
+ _st_.goboom(36)
+_st_.blockend()
+try:
+ _st_.inline(3, a)
+except:
+ _st_.goboom(38)
+try:
+ _st_.inline(4, b)
+except:
+ _st_.goboom(39)
+try:
+ _st_.inline(5, c)
+except:
+ _st_.goboom(40)
+try:
+ _st_.plot(1, format='notprovided', _p_=plot(poly) )
+except:
+ _st_.goboom(42)
 _st_.endofdoc()
